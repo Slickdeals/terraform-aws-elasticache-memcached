@@ -1,3 +1,9 @@
+variable "cluster_id" {
+  type        = string
+  default     = ""
+  description = "Group identifier. ElastiCache converts this name to lowercase. Changing this value will re-create the resource."
+}
+
 variable "vpc_id" {
   type        = string
   default     = ""
